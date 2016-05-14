@@ -7,6 +7,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\button_sprite</sprite>
     <sprites name="old sprites">
       <sprite>sprites\checkbox_image</sprite>
       <sprite>sprites\sprite_filename</sprite>
@@ -17,6 +18,17 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="String Funtions">
+      <script>scripts\real_to_alpha.gml</script>
+      <script>scripts\string_cut_AB.gml</script>
+      <script>scripts\string_remove_whitespace.gml</script>
+      <script>scripts\string_extract_SVG.gml</script>
+      <script>scripts\string_open_SVG.gml</script>
+      <script>scripts\string_save_SVG.gml</script>
+    </scripts>
+    <scripts name="button functions">
+      <script>scripts\button_create.gml</script>
+    </scripts>
     <scripts name="old functions">
       <script>scripts\alpha_string.gml</script>
       <script>scripts\cut_from_to.gml</script>
@@ -26,14 +38,6 @@
       <script>scripts\rename_classes.gml</script>
       <script>scripts\serialize_classes.gml</script>
       <script>scripts\serialize_IDs.gml</script>
-    </scripts>
-    <scripts name="String Funtions">
-      <script>scripts\real_to_alpha.gml</script>
-      <script>scripts\string_cut_AB.gml</script>
-      <script>scripts\string_remove_whitespace.gml</script>
-      <script>scripts\string_extract_SVG.gml</script>
-      <script>scripts\string_open_SVG.gml</script>
-      <script>scripts\string_save_SVG.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -52,8 +56,15 @@
       <object>objects\object_open_button</object>
       <object>objects\object_filename</object>
     </objects>
+    <objects name="Buttons">
+      <object>objects\button_parent</object>
+      <objects name="buttons">
+        <object>objects\button_remove_comments</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\application_canvas</room>
     <rooms name="old rooms">
       <room>rooms\room0</room>
       <room>rooms\room_2</room>
