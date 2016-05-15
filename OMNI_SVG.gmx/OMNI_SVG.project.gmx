@@ -28,6 +28,8 @@
       <script>scripts\string_remove_DOC.gml</script>
       <script>scripts\string_remove_XML.gml</script>
       <script>scripts\string_remove_comments.gml</script>
+      <script>scripts\string_remove_CSS_padding.gml</script>
+      <script>scripts\string_metadata.gml</script>
     </scripts>
     <scripts name="button functions">
       <script>scripts\button_create.gml</script>
@@ -62,6 +64,7 @@
         <object>objects\button_styles</object>
         <object>objects\button_version</object>
         <object>objects\button_weld_paths</object>
+        <object>objects\button_metadata</object>
       </objects>
       <object>objects\object_convert_button</object>
       <object>objects\object_open_button</object>
