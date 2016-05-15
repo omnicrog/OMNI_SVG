@@ -1,11 +1,12 @@
 ///string_remove_whitespace(string);
-new_string = argument0;
+payload = argument0;
 for(i=0;i<32;i++){
     ws_char = chr(i);
-    new_string = string_replace_all(new_string,ws_char," ");
+    payload = string_replace_all(payload,ws_char," ");
 }
 repeat(20){
-    new_string = string_replace_all(new_string,"  "," ");
+    payload = string_replace_all(payload,"  "," ");
 }
-new_string = string_replace_all(new_string," <","<");
-return new_string;
+payload = string_replace_all(payload," <","<");
+payload = string_replace_all(payload," >",">")
+return payload;
