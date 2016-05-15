@@ -45,6 +45,7 @@
       <script>scripts\serialize_IDs.gml</script>
     </scripts>
     <script>scripts\parse.gml</script>
+    <script>scripts\html_entities.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
