@@ -1,6 +1,7 @@
 
-# OMNI_SVG
-<b>SVG compression tool</b>
+# <b>OMNI_SVG</b>
+
+<b SVG compression tool</b>
 <p>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</p>
 
 This tool has been constructed using <a href="http://www.yoyogames.com/gamemaker">GameMaker Studio</a>
