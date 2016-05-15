@@ -12,7 +12,7 @@ This tool has been constructed using <a href="http://www.yoyogames.com/gamemaker
 <br>
 <a href="https://www.facebook.com/omnicrog">
 <img title="Omnicrog on Facebook" width="32px" height="32px"
-src="https://lh4.googleusercontent.com/ru7436qdptLVXyBaBCbxwtPmqWeaHIhU807mvklvJ2ajMor7Sz62YADNWobbPIJZ0MP8DQ=w320-h200-k"></img>
+src="https://drive.google.com/thumbnail?id=0B12ImthY9ivFZ0ItX21wOUttVkU&authuser=0&v=1463269882283&sz=w320-h200-k"></img>
 </a>
 <a href="https://github.com/omnicrog">
 <img title="Omnicrog on GitHub" width="32px" height="32px"
