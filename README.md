@@ -11,16 +11,15 @@ This tool has been constructed using <a href="http://www.yoyogames.com/gamemaker
 <br>
 <a href="https://www.facebook.com/omnicrog">
 <img title="Omnicrog on Facebook" width="32px" height="32px"
-src="https://drive.google.com/open?id=0B12ImthY9ivFZ0ItX21wOUttVkU"></img>
+src="https://lh4.googleusercontent.com/ru7436qdptLVXyBaBCbxwtPmqWeaHIhU807mvklvJ2ajMor7Sz62YADNWobbPIJZ0MP8DQ=w320-h200-k"></img>
 </a>
 <a href="https://twitter.com/omnicrog">
 <img " title="Omnicrog on Twitter" width="32px" height="32px">
-<svg src="https://drive.google.com/open?id=0B12ImthY9ivFVWZPMm5fUzRWYm8> </svg>
+<svg src="https://drive.google.com/open?id=0B12ImthY9ivFVWZPMm5fUzRWYm8"> </svg>
 </img>
 </a>
 <a href="https://github.com/omnicrog">
 <img title="Omnicrog on GitHub" src="https://drive.google.com/open?id=0B12ImthY9ivFY3ZUSFlZSWt2U3c"></img>
 </a>
 </div>
-
 
