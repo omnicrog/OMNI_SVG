@@ -39,6 +39,7 @@
       <script>scripts\serialize_classes.gml</script>
       <script>scripts\serialize_IDs.gml</script>
     </scripts>
+    <script>scripts\parse.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="old objects">
@@ -59,7 +60,16 @@
     <objects name="Buttons">
       <object>objects\button_parent</object>
       <objects name="buttons">
-        <object>objects\button_remove_comments</object>
+        <object>objects\button_class_names</object>
+        <object>objects\button_comments</object>
+        <object>objects\button_CSS_padding</object>
+        <object>objects\button_DOC</object>
+        <object>objects\button_groups</object>
+        <object>objects\button_padding</object>
+        <object>objects\button_serialize_IDs</object>
+        <object>objects\button_styles</object>
+        <object>objects\button_version</object>
+        <object>objects\button_weld_paths</object>
       </objects>
     </objects>
   </objects>
