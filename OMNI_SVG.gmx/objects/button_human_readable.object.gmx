@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-text="Remove formatting and whitespace characters";
+text="Make the file easier to read";
 
 </string>
           </argument>

@@ -45,43 +45,27 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
-    <objects name="old objects">
-      <objects name="room 2">
-        <object>objects\button_open_file</object>
-        <object>objects\button_convert_and_save</object>
-        <object>objects\text_original</object>
-        <object>objects\text_result</object>
-        <objects name="options">
-          <object>objects\check_box</object>
-          <object>objects\check_boxs</object>
-        </objects>
-      </objects>
-      <object>objects\object_convert_button</object>
-      <object>objects\object_open_button</object>
-      <object>objects\object_filename</object>
-    </objects>
     <objects name="Buttons">
-      <object>objects\button_parent</object>
       <objects name="buttons">
+        <object>objects\button_parent</object>
         <object>objects\button_class_names</object>
         <object>objects\button_comments</object>
         <object>objects\button_CSS_padding</object>
         <object>objects\button_DOC</object>
         <object>objects\button_groups</object>
-        <object>objects\button_padding</object>
+        <object>objects\button_human_readable</object>
         <object>objects\button_serialize_IDs</object>
         <object>objects\button_styles</object>
         <object>objects\button_version</object>
         <object>objects\button_weld_paths</object>
       </objects>
+      <object>objects\object_convert_button</object>
+      <object>objects\object_open_button</object>
+      <object>objects\object_filename</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\application_canvas</room>
-    <rooms name="old rooms">
-      <room>rooms\room0</room>
-      <room>rooms\room_2</room>
-    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

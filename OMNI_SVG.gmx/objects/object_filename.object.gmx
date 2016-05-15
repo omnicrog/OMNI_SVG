@@ -50,7 +50,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x+8,y+8,name);
+draw_text(x+8,y+4,name);
 </string>
           </argument>
         </arguments>
