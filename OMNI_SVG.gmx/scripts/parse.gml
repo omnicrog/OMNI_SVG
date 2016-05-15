@@ -1,10 +1,15 @@
 ///parse(SVG)
 payload=string_remove_whitespace(argument0);
 if(button_DOC.enabled){
+payload=string_remove_DOC(payload);
+}
+if(button_XML_dec.enabled){
+payload=string_remove_XML(payload);
 }
 if(button_version.enabled){
 }
 if(button_comments.enabled){
+payload=string_remove_comments(payload);
 }
 if(button_CSS_padding.enabled){
 }
@@ -15,7 +20,6 @@ if(button_serialize_IDs.enabled){
 if(button_groups.enabled){
 }
 if(button_styles.enabled){
-show_debug_message("enabled");
 }
 if(button_weld_paths.enabled){
 }

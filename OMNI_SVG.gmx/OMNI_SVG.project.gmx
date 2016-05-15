@@ -25,6 +25,9 @@
       <script>scripts\string_extract_SVG.gml</script>
       <script>scripts\string_open_SVG.gml</script>
       <script>scripts\string_save_SVG.gml</script>
+      <script>scripts\string_remove_DOC.gml</script>
+      <script>scripts\string_remove_XML.gml</script>
+      <script>scripts\string_remove_comments.gml</script>
     </scripts>
     <scripts name="button functions">
       <script>scripts\button_create.gml</script>
@@ -52,6 +55,7 @@
         <object>objects\button_comments</object>
         <object>objects\button_CSS_padding</object>
         <object>objects\button_DOC</object>
+        <object>objects\button_XML_dec</object>
         <object>objects\button_groups</object>
         <object>objects\button_human_readable</object>
         <object>objects\button_serialize_IDs</object>
