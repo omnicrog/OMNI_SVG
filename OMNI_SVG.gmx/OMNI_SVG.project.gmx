@@ -41,6 +41,9 @@
     </scripts>
     <script>scripts\parse.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <objects name="old objects">
       <objects name="room 2">

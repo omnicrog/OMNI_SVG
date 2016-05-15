@@ -79,7 +79,8 @@ text="";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (enabled){
+            <string>draw_set_font(font0);
+if (enabled){
     draw_sprite(button_sprite,0,x,y);
 }else{
     draw_sprite(button_sprite,1,x,y);
