@@ -13,13 +13,13 @@ This tool has been constructed using <a href="http://www.yoyogames.com/gamemaker
 <img title="Omnicrog on Facebook" width="32px" height="32px"
 src="https://lh4.googleusercontent.com/ru7436qdptLVXyBaBCbxwtPmqWeaHIhU807mvklvJ2ajMor7Sz62YADNWobbPIJZ0MP8DQ=w320-h200-k"></img>
 </a>
-<a href="https://www.facebook.com/omnicrog">
-<img title="Omnicrog on Facebook" width="32px" height="32px"
-src="https://lh4.googleusercontent.com/ru7436qdptLVXyBaBCbxwtPmqWeaHIhU807mvklvJ2ajMor7Sz62YADNWobbPIJZ0MP8DQ=w320-h200-k"></img>
+<a href="https://github.com/omnicrog">
+<img title="Omnicrog on GitHub" width="32px" height="32px"
+src="https://drive.google.com/thumbnail?id=0B12ImthY9ivFY3ZUSFlZSWt2U3c&authuser=0&v=1463269882837&sz=w800-rw"></img>
 </a>
-<a href="https://www.facebook.com/omnicrog">
-<img title="Omnicrog on Facebook" width="32px" height="32px"
-src="https://lh4.googleusercontent.com/ru7436qdptLVXyBaBCbxwtPmqWeaHIhU807mvklvJ2ajMor7Sz62YADNWobbPIJZ0MP8DQ=w320-h200-k"></img>
+<a href="https://twitter.com/omnicrog">
+<img title="Omnicrog on Twitter" width="32px" height="32px"
+src="https://drive.google.com/thumbnail?id=0B12ImthY9ivFVWZPMm5fUzRWYm8&authuser=0&v=1463269882837&sz=w84-h63"></img>
 </a>
 </div>
 
