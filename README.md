@@ -1,19 +1,21 @@
 <html>
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+dsgs
 <head>
 </head>
 #OMNI SVG
 <table border=10>
- <thead >
-  <tr style="background-color:rgb(126, 126, 126)">
-     <th style="background-color:rgb(126, 126, 126)" width="10%" >Author</th>
-     <th style="background-color:rgb(126, 126, 126)" width="90%" >Decription</th>
+ <thead>
+  <tr>
+     <th width="10%" >Author</th>
+     <th width="90%" >Decription</th>
   </tr>
  </thead>
  <tfoot>
  </tfoot>
- <tbody>
+ <tbody style="background-color:rgb(126, 126, 126)">
   <tr>
-     <td>Omnicrog</td>
+     <td style="background-color:rgb(126, 126, 126)">Omnicrog</td>
      <td>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</td>
   </tr>
  </tbody>
