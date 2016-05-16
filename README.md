@@ -13,13 +13,9 @@
  </thead>
  <tfoot>
  </tfoot>
- <tbody style="background-color:rgb(126, 126, 126)">
+ <tbody>
   <tr>
-     <td style="background-color:rgb(126, 126, 126)">Omnicrog</td>
-     <td>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</td>
-  </tr>
-  <tr>
-     <td style="background-color:rgb(126, 126, 126)">Omnicrog</td>
+     <td >Omnicrog</td>
      <td>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</td>
   </tr>
  </tbody>
