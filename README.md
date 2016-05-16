@@ -1,7 +1,7 @@
 #OMNI SVG
 
 <defs>
-<style>
+<style hidden="true">
 li {display:inline-block;}
 li a {display:block}
 a {list-style-type:none;}
