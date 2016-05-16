@@ -1,17 +1,14 @@
 #OMNI SVG
 
 <defs>
-<style hidden="true">
-li {display:inline-block;}
-li a {display:block}
-a {list-style-type:none;}
+<style>
 </style>
 </defs>
 <b> SVG compression tool</b>
 <p>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</p>
 
 This tool has been constructed using <a href="http://www.yoyogames.com/gamemaker">GameMaker Studio</a>
-<l list-style-type="none">
+<ol list-style-type="none">
 <li><a>
 <img title="Omnicrog" src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-1/p160x160/10858540_10205422314899201_8699371067342511992_n.jpg?oh=cecfb57090eb62cfb6316bb5e8a69777&oe=57A7444C"></img></a>
 </li>
@@ -32,7 +29,7 @@ src="https://camo.githubusercontent.com/8a33f79c838baab309da568cdf9185b6d3edf1aa
 
 
 
-</l>
+</ol>
 
 
 
