@@ -2,6 +2,7 @@
 <head>
 <style>
 a {}
+style {display:hidden}
 </style>
 </head>
 #OMNI SVG
