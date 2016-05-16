@@ -1,8 +1,13 @@
 <html>
+<head>
+<style>
+a {}
+</style>
+</head>
 #OMNI SVG
 <table>
- <thead>
-  <tr>
+ <thead  border="#FFFFFF">
+  <tr  border="#FFFFFF">
      <th  border="#FFFFFF">Author</th>
      <th  border="#FFFFFF">Decription</th>
   </tr>
