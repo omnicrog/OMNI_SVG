@@ -46,6 +46,7 @@
     </scripts>
     <script>scripts\parse.gml</script>
     <script>scripts\html_entities.gml</script>
+    <script>scripts\string_tag_is_self_terminating.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
