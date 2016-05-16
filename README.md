@@ -1,17 +1,12 @@
 <html>
 <head>
-<style>
-a {}
-style {display:hidden}
-table th {background-color: #565656}
-</style>
 </head>
 #OMNI SVG
-<table>
- <thead  border="#FFFFFF">
-  <tr  border="#FFFFFF">
-     <th  border="#FFFFFF">Author</th>
-     <th  border="#FFFFFF">Decription</th>
+<table border=10>
+ <thead >
+  <tr style="background-color:rgb(126, 126, 126)">
+     <th style="background-color:rgb(126, 126, 126)" width="10%" >Author</th>
+     <th style="background-color:rgb(126, 126, 126)" width="90%" >Decription</th>
   </tr>
  </thead>
  <tfoot>
