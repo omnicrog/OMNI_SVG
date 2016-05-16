@@ -47,7 +47,7 @@
     <script>scripts\parse.gml</script>
     <script>scripts\html_entities.gml</script>
     <script>scripts\string_tag_is_self_terminating.gml</script>
-    <script>scripts\string_SVG_to_array.gml</script>
+    <script>scripts\tags_to_array.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
