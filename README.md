@@ -1,25 +1,18 @@
 <html>
+#OMNI SVG
 <table>
  <thead>
   <tr>
-     <th>Month</th>
-     <th>Savings</th>
+     <th>Author</th>
+     <th>Decription</th>
   </tr>
  </thead>
  <tfoot>
-  <tr>
-     <td>Sum</td>
-     <td>$180</td>
-  </tr>
  </tfoot>
  <tbody>
   <tr>
-     <td>January</td>
-     <td>$100</td>
-  </tr>
-  <tr>
-     <td>February</td>
-     <td>$80</td>
+     <td>Omnicrog</td>
+     <td>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</td>
   </tr>
  </tbody>
 </table>
