@@ -1,10 +1,10 @@
 <html>
 #OMNI SVG
-<table border="#FFFFFF">
+<table>
  <thead>
   <tr>
-     <th>Author</th>
-     <th>Decription</th>
+     <th  border="#FFFFFF">Author</th>
+     <th  border="#FFFFFF">Decription</th>
   </tr>
  </thead>
  <tfoot>
