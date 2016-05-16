@@ -1,7 +1,11 @@
 #OMNI SVG
 
 <defs>
-<style>
+<style type="text/css">
+ <![CDATA[
+    li {display:block}
+    li a {display:inline-block}
+   ]]>
 </style>
 </defs>
 <b> SVG compression tool</b>
