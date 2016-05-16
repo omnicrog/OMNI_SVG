@@ -1,6 +1,7 @@
 <html>
-<link href="https://drive.google.com/file/d/0B12ImthY9ivFWUdPQ1V5ekppLTA/view?usp=sharing" rel="stylesheet"></link>
+
 <head>
+<link href="https://drive.google.com/file/d/0B12ImthY9ivFWUdPQ1V5ekppLTA/view?usp=sharing" rel="stylesheet"></link>
 </head>
 #OMNI SVG
 <table border=10>
