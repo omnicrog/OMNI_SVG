@@ -3,6 +3,7 @@
 <style>
 a {}
 style {display:hidden}
+table th {background-color: #565656}
 </style>
 </head>
 #OMNI SVG
