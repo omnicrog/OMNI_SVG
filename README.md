@@ -1,17 +1,8 @@
-<!DOCTYPE html>
 #OMNI SVG
 
-<defs>
-<style type="text/css">
- <![CDATA[
-    li {display:block}
-    li a {display:inline-block}
-   ]]>
-</style>
-</defs>
 <b> SVG compression tool</b>
 <p>Compress an SVG file to it's <b>smallest size</b>, with lots of optional features</p>
-
+<object src="https://www.youtube.com/"></object>
 This tool has been constructed using <a href="http://www.yoyogames.com/gamemaker">GameMaker Studio</a>
 <ol list-style-type="none">
 <li><a>
