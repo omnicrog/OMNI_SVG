@@ -1,6 +1,6 @@
 <html>
 #OMNI SVG
-<table>
+<table border="#FFFFFF">
  <thead>
   <tr>
      <th>Author</th>
