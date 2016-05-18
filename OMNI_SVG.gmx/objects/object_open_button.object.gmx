@@ -25,11 +25,52 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>payload="";
-state="";
+            <string>payload=EMPTY_STRING;
+package=EMPTY_STRING;
+tagsPrevious=0;
+bytesPrevious=0;
+tagsCurrent=0;
+bytesCurrent=0;
+
+tagsPerSec=0;
+bytesPerSec=0;
+
 iterator=0;
 tags=0;
-package="";
+arraysize=0;
+tagsize=0;
+filesize=0;
+readsize=0;
+packagesize=0;
+state="ready";
+alarm[0]=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0]=fps;
+show_debug_message(OMNI_TIME);
+bytesCurrent           = readsize; 
+bytesPerSec            = ((bytesCurrent-bytesPrevious)*fps)/1024;
+bytesPrevious          = bytesCurrent;
 </string>
           </argument>
         </arguments>
@@ -53,40 +94,48 @@ package="";
           <argument>
             <kind>1</kind>
             <string>switch(state){
+case"opening file":
+    if (name!=""){
+        if(!file_text_eof(myfile)){
+            payload=payload+file_text_readln(myfile);
+            readsize=string_length(payload);
+            count+=1;
+        }else{
+            readsize=string_length(payload);
+            file_text_close(myfile);
+            package=payload;
+            packagesize=string_length(package);
+            tagsize =string_count("&gt;",payload);
+            file_loaded=true;
+            state="processing";
+        }
+        
+    }
+
+break;
 case"processing":
-    if(string_count("&lt;",package)&gt;1){
-        next_pos=/*0;*/
-        string_pos("&lt;",string_delete(package,1,1));
-        /*for(ii=2;ii&lt;string_length(package);ii++){
-            if(string_char_at(package,ii)=="&lt;"){
-                next_pos=ii-1;
-                break;
-            }
-        }*/
-        tags[iterator,0]=string_copy(package,1,next_pos);
+    if(iterator+1&lt;tagsize){
+        next_pos=string_pos("&lt;",string_replace(package,"&lt;",""));
+        
+        tags[iterator,0]=string_remove_whitespace(string_copy(package,1,next_pos));
         package=string_delete(package,1,next_pos);
         show_debug_message(string(tags[iterator,0]));
         iterator+=1;
-        
-        
     }
-    else
-    if(string_count("&lt;",package)==1){
-        tags[iterator,0]=string_copy(package,1,string_length(package));
+    else{
+        tags[iterator,0]=string_remove_whitespace(string_copy(package,1,string_length(package)));
         package=string_delete(package,1,string_length(package));
         state="processed";
         show_debug_message(string(tags[iterator,0]));
     }
-    as =array_height_2d(tags);
-    ts =string_count("&gt;",payload);
-    show_debug_message(string(as)+"/"+string(ts));
-    if (as==ts){
+    arraysize = array_height_2d(tags);
+    show_debug_message(string(arraysize)+"/"+string(tagsize));
+    if (arraysize==tagsize){
         iterator=0;
     }
 break;
 case"processed":
-    show_message("processed");
-    state="";
+    state="ready";
 break;
 default:break;
 }
@@ -113,26 +162,24 @@ default:break;
           <argument>
             <kind>1</kind>
             <string>name=get_open_filename(".svg","untitled.svg");
-tags=0;
-if (name!=""){
+
+if(name!=""){
+    tags=0;
+    readsize=0;
     object_filename.name = name;
-    
+    afile=file_bin_open(name,0);
+    filesize=file_bin_size(afile);
+    object_filename.filesize=filesize;
+    file_bin_close(afile);
     myfile = file_text_open_read(name);
     payload="";
-    while(!file_text_eof(myfile)){
-        text = file_text_readln(myfile);
-        payload=payload+text;
-    }
-    file_text_close(myfile);
-    package=payload;
-    key="8K5GheMN3sbwYxxCJazwwIUdd798Q5pWwTfnSsRsP-xP--aGC_fjuoU4JgXevs8vJy2gvLoXWAA9zmVHGF8eZw";
-    post = http_get("https://api.cloudconvert.com/process/?inputformat=svg&amp;outputformat=png&amp;apikey="+key);
-    file_loaded=true;
-    state="processing";
-    show_debug_message("processing....");
+    count=0;
+    state="opening file";
 }
 
 
+//key="8K5GheMN3sbwYxxCJazwwIUdd798Q5pWwTfnSsRsP-xP--aGC_fjuoU4JgXevs8vJy2gvLoXWAA9zmVHGF8eZw";
+//post = http_get("https://api.cloudconvert.com/process/?inputformat=svg&amp;outputformat=png&amp;apikey="+key);
 
 </string>
           </argument>
@@ -156,7 +203,7 @@ if (name!=""){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var r_str = "null";
+            <string>/*var r_str = "null";
  if (ds_map_find_value(async_load, "id") == post)
     {
     if (ds_map_find_value(async_load, "status") == 0)
@@ -166,7 +213,77 @@ if (name!=""){
     }
 
 show_message(r_str);
-clipboard_set_text(r_str);
+clipboard_set_text(r_str);*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+currentfps=fps;
+
+
+int2=room_width-10;
+int3=room_width-50;
+if(string_digits(string(readsize/filesize))==""){
+int=0;
+}else{
+int=readsize/filesize;
+}
+if(string_digits(string(arraysize/tagsize))==""){
+int4=0;
+}else{
+int4=arraysize/tagsize;
+}
+bytesCurrent           = readsize; 
+bytesPerSec            = ((bytesCurrent-bytesPrevious)*currentfps)/1024;
+bytesPrevious          = bytesCurrent;
+tagsCurrent            = arraysize;
+tagsPerSec             = (tagsCurrent-tagsPrevious)*currentfps;
+tagsPrevious           = tagsCurrent;
+
+draw_text(10,room_height-20,"tags/s:"+string(tagsPerSec));
+draw_text(10,room_height-38,"kb/s:"+string(bytesPerSec/1024));
+
+
+draw_set_halign(fa_right);
+draw_text(int2,10,state);
+draw_text(int2,24,string(arraysize)+"/"+string(tagsize));
+
+draw_set_colour(c_black);
+draw_rectangle(int3,y+30,int3+(40),y+35,0);
+draw_set_colour(c_red);
+draw_rectangle(int3,y+30,int3+(40*int),y+35,0);
+draw_set_colour(c_black);
+
+draw_set_colour(c_black);
+draw_rectangle(int3,y+40,int3+(40),y+45,0);
+draw_set_colour(c_red);
+draw_rectangle(int3,y+40,int3+(40*int4),y+45,0);
+draw_set_colour(c_black);
+
+
+
+
+draw_set_halign(fa_left);
+draw_text(0,0,OMNI_TIME);
 </string>
           </argument>
         </arguments>

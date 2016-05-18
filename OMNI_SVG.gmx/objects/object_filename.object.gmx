@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>name = "";
+            <string>filesize=0;
+name = EMPTY_STRING;
 
 </string>
           </argument>
@@ -50,7 +51,11 @@
           <argument>
             <kind>1</kind>
             <string>draw_self();
+draw_set_font(font1);
 draw_text(x+8,y+4,name);
+
+draw_text(x+484,y+4,filesize/1024);
+draw_text(x+484,y+18,object_open_button.readsize/1024);
 </string>
           </argument>
         </arguments>

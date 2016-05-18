@@ -50,9 +50,11 @@
     <script>scripts\string_tag_is_self_terminating.gml</script>
     <script>scripts\tags_to_array.gml</script>
     <script>scripts\cloudconvert_response.gml</script>
+    <script>scripts\number_to_2chars.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <objects name="Buttons">
@@ -79,6 +81,10 @@
   <rooms name="rooms">
     <room>rooms\application_canvas</room>
   </rooms>
+  <constants number="2">
+    <constant name="OMNI_TIME">string(number_to_2chars(current_hour))+":"+string(number_to_2chars(current_minute))+":"+string(number_to_2chars(current_second))</constant>
+    <constant name="EMPTY_STRING">""</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
