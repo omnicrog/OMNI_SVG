@@ -81,9 +81,10 @@
   <rooms name="rooms">
     <room>rooms\application_canvas</room>
   </rooms>
-  <constants number="2">
+  <constants number="3">
     <constant name="OMNI_TIME">string(number_to_2chars(current_hour))+":"+string(number_to_2chars(current_minute))+":"+string(number_to_2chars(current_second))</constant>
     <constant name="EMPTY_STRING">""</constant>
+    <constant name="EMPTY_INT">0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

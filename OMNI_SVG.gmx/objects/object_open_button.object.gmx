@@ -119,15 +119,83 @@ case"processing":
         
         tags[iterator,0]=string_remove_whitespace(string_copy(package,1,next_pos));
         package=string_delete(package,1,next_pos);
+        tag = string_copy(tags[iterator,0],1,string_pos("&gt;",tags[iterator,0]));
         show_debug_message(string(tags[iterator,0]));
+        
+        
         iterator+=1;
     }
     else{
         tags[iterator,0]=string_remove_whitespace(string_copy(package,1,string_length(package)));
         package=string_delete(package,1,string_length(package));
+        tag = string_copy(tags[iterator,0],1,string_pos("&gt;",tags[iterator,0]));
         state="processed";
         show_debug_message(string(tags[iterator,0]));
     }
+    //write to ini
+        ini_open("tags.ini");
+        
+        if(string_count(" ",tag)&lt;1)
+        {
+         if(string_count("/&gt;",tag)&gt;0)
+         {
+          tag = string_copy(tag,1,string_pos("/&gt;",tag)-1);
+          tag = string_replace(tag,"&lt;","");
+          
+         }else
+         if(string_count("&lt;/",tag)&gt;0)
+         {
+          tag = string_copy(tag,1,string_pos("&gt;",tag)-1);
+          tag = string_replace(tag,"&lt;/","");
+          selfc = "closing tag";
+         }else
+         {
+          if(string_count("&lt;!",tag)&gt;0)|(string_count("&lt;?",tag)&gt;0)
+          {
+           selfc = "self closing";
+          }else
+          {
+           selfc = "requires closing tag";
+          }
+          tag = string_copy(tag,1,string_pos("&gt;",tag)-1);
+          tag = string_replace(tag,"&lt;","");
+         }
+        }
+        else
+        {
+         if(string_count("/&gt;",tag)&gt;0)
+         {
+          tag = string_copy(tag,1,string_pos(" ",tag)-1);
+          tag = string_replace(tag,"&lt;","");
+          selfc = "self closing";
+         }else
+         if(string_count("&lt;/",tag)&gt;0)
+         {
+          tag = string_copy(tag,1,string_pos(" ",tag)-1);
+          tag = string_replace(tag,"&lt;/","");
+          selfc = "closing tag";
+         }else
+         {
+          if(string_count("&lt;!",tag)&gt;0)|(string_count("&lt;?",tag)&gt;0)
+          {
+           selfc = "self closing";
+          }else
+          {
+           selfc = "requires closing tag";
+          }
+          tag = string_copy(tag,1,string_pos(" ",tag)-1);
+          tag = string_replace(tag,"&lt;","");
+         }
+        }
+        if(tag!=""){
+            if(!ini_key_exists(selfc,tag))
+            {
+             ini_write_string(selfc,tag,"");
+            }
+        }
+        
+        ini_close();
+        //write to ini - close
     arraysize = array_height_2d(tags);
     show_debug_message(string(arraysize)+"/"+string(tagsize));
     if (arraysize==tagsize){
