@@ -19,6 +19,22 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="states">
+      <scripts name="state scripts">
+        <script>scripts\state_SWITCH.gml</script>
+        <script>scripts\state_VARIABLES.gml</script>
+      </scripts>
+      <script>scripts\state_PROGRAMLOADED.gml</script>
+      <script>scripts\state_GETTINGFILENAME.gml</script>
+      <script>scripts\state_READINGFILE.gml</script>
+      <script>scripts\state_SCANNING.gml</script>
+      <script>scripts\state_PROCESSING.gml</script>
+      <script>scripts\state_PROCESSED.gml</script>
+      <script>scripts\state_COMPRESSING.gml</script>
+      <script>scripts\state_COMPRESSED.gml</script>
+      <script>scripts\state_SAVING.gml</script>
+      <script>scripts\state_SAVED.gml</script>
+    </scripts>
     <scripts name="String Funtions">
       <script>scripts\real_to_alpha.gml</script>
       <script>scripts\string_cut_AB.gml</script>

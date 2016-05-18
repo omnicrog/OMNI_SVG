@@ -229,7 +229,15 @@ default:break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>name=get_open_filename(".svg","untitled.svg");
+            <string>filedefs=
+".svg"                  +"|"+   "*.svg;"                    +"|"+
+".html"                 +"|"+   "*.html;"                   +"|"+
+".xml"                  +"|"+   "*.xml;"                    +"|"+
+".txt"                  +"|"+   "*.txt;"                    +"|"+
+"all files"             +"|"+   "*.*;"
+
+
+name=get_open_filename(filedefs,"");
 
 if(name!=""){
     tags=0;
@@ -321,7 +329,7 @@ int4=0;
 int4=arraysize/tagsize;
 }
 bytesCurrent           = readsize; 
-bytesPerSec            = ((bytesCurrent-bytesPrevious)*currentfps)/1024;
+bytesPerSec            = ((bytesCurrent-bytesPrevious)*currentfps);
 bytesPrevious          = bytesCurrent;
 tagsCurrent            = arraysize;
 tagsPerSec             = (tagsCurrent-tagsPrevious)*currentfps;
