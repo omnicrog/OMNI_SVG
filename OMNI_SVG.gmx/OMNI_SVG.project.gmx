@@ -15,6 +15,10 @@
       <sprite>sprites\sprite_convert_button</sprite>
     </sprites>
     <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\sprite_CONTROLLER</sprite>
+    <sprite>sprites\sprite_CLICKABLE</sprite>
+    <sprite>sprites\sprite_UI_FILE</sprite>
+    <sprite>sprites\sprite_STATUS</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -71,6 +75,7 @@
   <fonts name="fonts">
     <font>fonts\font0</font>
     <font>fonts\font1</font>
+    <font>fonts\font_BUTTON</font>
   </fonts>
   <objects name="objects">
     <objects name="Buttons">
@@ -93,14 +98,40 @@
       <object>objects\object_open_button</object>
       <object>objects\object_filename</object>
     </objects>
+    <objects name="new">
+      <objects name="new control">
+        <object>objects\object_CONTROLLER</object>
+      </objects>
+      <objects name="new display">
+        <object>objects\ui_IN_FILE</object>
+        <object>objects\ui_OUT_FILE</object>
+        <object>objects\ui_STATUS_PARENT</object>
+        <object>objects\ui_IN_STATUS_LOAD</object>
+        <object>objects\ui_IN_STATUS_READ</object>
+        <object>objects\ui_OUT_STATUS_COMPRESS</object>
+        <object>objects\ui_OUT_STATUS_SAVE</object>
+      </objects>
+      <objects name="new buttons">
+        <object>objects\clickable_PARENT</object>
+        <object>objects\clickable_OPEN</object>
+        <object>objects\clickable_BROWSE</object>
+        <object>objects\clickable_COMPRESS</object>
+        <object>objects\clickable_SAVE</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_NEW</room>
     <room>rooms\application_canvas</room>
   </rooms>
-  <constants number="3">
+  <constants number="7">
     <constant name="OMNI_TIME">string(number_to_2chars(current_hour))+":"+string(number_to_2chars(current_minute))+":"+string(number_to_2chars(current_second))</constant>
     <constant name="EMPTY_STRING">""</constant>
     <constant name="EMPTY_INT">0</constant>
+    <constant name="HMIDDLE">fa_center</constant>
+    <constant name="VMIDDLE">fa_middle</constant>
+    <constant name="HLEFT">draw_set_halign(fa_left)</constant>
+    <constant name="HRIGHT">draw_set_halign(fa_right)</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

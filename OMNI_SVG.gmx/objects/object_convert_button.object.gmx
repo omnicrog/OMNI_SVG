@@ -28,10 +28,12 @@
             <string>if(object_filename.name=""){
     show_message("Epic Fail!!");
 }else{
+      
     name = get_save_filename(".svg","untitled.svg")
     payload = parse(object_open_button.payload);
     
     if (name!=""){
+        name=string_insert("copy-",name,string_pos(".",name))
         myfile = file_text_open_write(name);
         file_text_write_string(myfile,payload);
         file_text_close(myfile);
