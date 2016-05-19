@@ -20,6 +20,7 @@
     <sprite>sprites\sprite_STATUS</sprite>
     <sprite>sprites\sprite9</sprite>
     <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\sprite11</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
