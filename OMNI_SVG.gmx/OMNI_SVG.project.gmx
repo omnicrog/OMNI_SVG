@@ -19,6 +19,7 @@
     <sprite>sprites\sprite_CLICKABLE</sprite>
     <sprite>sprites\sprite_UI_FILE</sprite>
     <sprite>sprites\sprite_STATUS</sprite>
+    <sprite>sprites\sprite10</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
